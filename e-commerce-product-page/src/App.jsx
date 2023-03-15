@@ -11,11 +11,10 @@ function App() {
   const [orderErrorMessage, setOrderErrorMessage] = useState("");
   const [openCart, setOpenCart] = useState(false);
   const [cartArray, setCartArray] = useState(() => JSON.parse(localStorage.getItem("myCart")) || []);
-  const [currentOrderTotal, setCurrentOrderTotal] = useState(() => cartArray[0].productTotalOrder || 0);
+  const [currentOrderTotal, setCurrentOrderTotal] = useState(() => cartArray[0]?.productTotalOrder || 0);
   const [activeID, setActiveID] = useState(1);
   const [lightHouseMode, setLightHouseMode] = useState(false);
   
- 
   //local Storage
   useEffect(() => {
     localStorage.setItem("myCart",  JSON.stringify(cartArray))
@@ -79,7 +78,7 @@ function App() {
             imageUrl: "../image-product-1-thumbnail.jpg",
             productName: "Fall Limited Edition Sneakers",
             productAmount: 125,
-            productTotalOrder: orderTotal,
+            "productTotalOrder": orderTotal,
             id: nanoid(),
           },
         ];
