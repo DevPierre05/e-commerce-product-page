@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.company {
+  font-family: 'Secular One', sans-serif;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  transition: all 0.3s;
+}
+
+.main-nav-link:link:after,
+.main-nav-link:visited:after
+ {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background-color: #fbc037;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.active {
+  font-weight: 800 !important;
+}
+
+/* .main-nav-link:hover, */
+.main-nav-link:active {
+  color: #fab005;
+}
+
+.main-nav-link:hover:after,
+.main-nav-link:active:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
