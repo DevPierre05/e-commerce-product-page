@@ -2,7 +2,7 @@ import profileImage from "./images/image-avatar.png"
 export default function Header(props) {
   
   return (
-    <div className="px-4 py-6 flex justify-between items-center md:px-2 md:pt-8 pb-0 md:border-b">
+    <nav className="px-4 py-6 flex justify-between items-center md:px-2 md:pt-6 pb-3 md:border-b">
       <div className="flex gap-3 items-center md:hidden">
         <svg
           onClick={props.menuClick}
@@ -32,36 +32,46 @@ export default function Header(props) {
           />
         </svg>
         <ul className="hidden md:flex md:gap-4 lg:gap-8 md:text-slate-400 md:text-md md:cursor-pointer md:pb-0">
-          <a
-            href="#"
-            className="md:hover:text-slate-800 md:active:font-bold md:hover:border-2 md:border-white md:border-b-orange-600 md:pb-8"
-          >
-            Collections
-          </a>
-          <a
-            href="#"
-            className="md:hover:text-slate-800 md:active:font-bold md:hover:border-2 md:border-white md:border-b-orange-600 md:pb-8 "
-          >
-            Men
-          </a>
-          <a
-            href="#"
-            className="md:hover:text-slate-800 md:active:font-bold md:hover:border-2 md:border-white md:border-b-orange-600 md:pb-8 "
-          >
-            Women
-          </a>
-          <a
-            href="#"
-            className="md:hover:text-slate-800 md:active:font-bold md:hover:border-2 md:border-white md:border-b-orange-600 md:pb-8 "
-          >
-            About
-          </a>
-          <a
-            href="#"
-            className="md:hover:text-slate-800 md:active:font-bold md:hover:border-2 md:border-white md:border-b-orange-600 md:pb-8 "
-          >
-            Contact
-          </a>
+          <li>
+            <a
+              href="#"
+              className="md:hover:text-slate-800 md:active:font-bold md:hover:border-2 md:border-white md:border-b-orange-600 md:pb-8"
+            >
+              Collections
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              className="md:hover:text-slate-800 md:active:font-bold md:hover:border-2 md:border-white md:border-b-orange-600 md:pb-8 "
+            >
+              Men
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              className="md:hover:text-slate-800 md:active:font-bold md:hover:border-2 md:border-white md:border-b-orange-600 md:pb-8 "
+            >
+              Women
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              className="md:hover:text-slate-800 md:active:font-bold md:hover:border-2 md:border-white md:border-b-orange-600 md:pb-8 "
+            >
+              About
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              className="md:hover:text-slate-800 md:active:font-bold md:hover:border-2 md:border-white md:border-b-orange-600 md:pb-8 "
+            >
+              Contact
+            </a>
+          </li>
         </ul>
       </div>
       <div className="flex gap-4 items-center justify-items-start md:pb-5">
@@ -89,6 +99,6 @@ export default function Header(props) {
           className="w-5 h-5 md:w-10 md:h-10 cursor-pointer md:hover:border-2 border-orange-600 md:hover:rounded-full"
         />
       </div>
-    </div>
+    </nav>
   );
 }

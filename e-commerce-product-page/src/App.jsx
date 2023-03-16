@@ -174,41 +174,51 @@ function App() {
             </svg>
 
             <ul className="menu-items flex flex-col gap-y-8 text-lg font-bold cursor-pointer text-slate-900 md:hidden">
-              <a
-                href="#"
-                onClick={linkClicks}
-                className="hover:text-orange-600 active:text-orange-700"
-              >
-                Collections
-              </a>
-              <a
-                href="#"
-                onClick={linkClicks}
-                className="hover:text-orange-600 active:text-orange-700"
-              >
-                Men
-              </a>
-              <a
-                href="#"
-                onClick={linkClicks}
-                className="hover:text-orange-600 active:text-orange-700"
-              >
-                Women
-              </a>
-              <a
-                href="#"
-                onClick={linkClicks}
-                className="hover:text-orange-600 active:text-orange-700"
-              >
-                About
-              </a>
-              <a
-                href="#"
-                onClick={linkClicks}
-                className="hover:text-orange-600 active:text-orange-700"
-              >
-                Contact
-              </a>
+              <li>
+                <a
+                  href="#"
+                  onClick={linkClicks}
+                  className="hover:text-orange-600 active:text-orange-700"
+                >
+                  Collections
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  onClick={linkClicks}
+                  className="hover:text-orange-600 active:text-orange-700"
+                >
+                  Men
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  onClick={linkClicks}
+                  className="hover:text-orange-600 active:text-orange-700"
+                >
+                  Women
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  onClick={linkClicks}
+                  className="hover:text-orange-600 active:text-orange-700"
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  onClick={linkClicks}
+                  className="hover:text-orange-600 active:text-orange-700"
+                >
+                  Contact
+                </a>
+              </li>
             </ul>
           </div>
         </div>
