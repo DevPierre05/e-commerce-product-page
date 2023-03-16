@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import Header from './Header'
-import { nanoid } from 'nanoid';
 import './App.css'
 
 function App() {
@@ -78,7 +77,6 @@ function App() {
             productName: "Fall Limited Edition Sneakers",
             productAmount: 125,
             productTotalOrder: orderTotal,
-            id: nanoid(),
           },
         ];
       });
