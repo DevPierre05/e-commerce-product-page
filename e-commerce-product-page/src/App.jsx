@@ -150,6 +150,7 @@ function App() {
 
   return (
     <main className="relative page max-w-full h-screen md:max-w-5xl md:mx-auto">
+      <h1 className='hidden'>Sneaker Page</h1>
       {menuOpen && (
         <div
           onClick={handleMenuClose}
