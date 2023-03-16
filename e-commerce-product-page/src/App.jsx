@@ -77,7 +77,7 @@ function App() {
             imageUrl: "../image-product-1-thumbnail.jpg",
             productName: "Fall Limited Edition Sneakers",
             productAmount: 125,
-            "productTotalOrder": orderTotal,
+            productTotalOrder: orderTotal,
             id: nanoid(),
           },
         ];
