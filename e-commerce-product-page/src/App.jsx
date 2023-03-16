@@ -469,9 +469,9 @@ function App() {
           <h2 className="company tracking-wider uppercase text-orange-500 text-sm md:text-orange-300">
             Sneaker Company
           </h2>
-          <h3 className="w-3/4 mt-2 text-3xl font-semibold tracking-wide md:w-full md:mt-3">
+          <h1 className="w-3/4 mt-2 text-3xl font-semibold tracking-wide md:w-full md:mt-3">
             Fall Limited Edition Sneakers
-          </h3>
+          </h1>
           <p className="product-info mt-3 text-slate-500 md:mt-8 md:w-full md:text-sm">
             These low-profile sneakers are your perfect casual wear companion.
             Featuring a durable rubber outer sole, they’ll withstand everything
