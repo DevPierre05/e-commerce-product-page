@@ -1,6 +1,5 @@
 import { useState,useRef, useEffect } from 'react'
 import Header from './Header'
-import { IoTrashOutline } from "react-icons/io5";
 import { nanoid } from 'nanoid';
 import './App.css'
 
@@ -94,7 +93,6 @@ function App() {
 
   //Delete functionality
   const deleteCart = function () {
-    console.log("delete clicked");
     setCurrentOrderTotal(0);
     setCartArray([]);
   };
@@ -112,7 +110,6 @@ function App() {
 
   //function display of a clicked cart
   const cartDisplayProduct = function () {
-    console.log(cartArray);
     return cartArray?.map((item, i) => {
       return (
         <div key={i} className="p-8 flex flex-col gap-4">
@@ -133,10 +130,17 @@ function App() {
                 </span>
               </p>
             </div>
-            <IoTrashOutline
+            <svg
               onClick={deleteCart}
               className="cursor-pointer basis-1/6 text-lg text-slate-400 justify-self-end self-center"
-            />
+              viewBox="0 0 24 24"
+              fill="#C3CAD9"
+              height="1.4em"
+              width="1em"
+            >
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path d="M17 6h5v2h-2v13a1 1 0 01-1 1H5a1 1 0 01-1-1V8H2V6h5V3a1 1 0 011-1h8a1 1 0 011 1v3zm1 2H6v12h12V8zm-9 3h2v6H9v-6zm4 0h2v6h-2v-6zM9 4v2h6V4H9z" />
+            </svg>
           </div>
           <button className="p-2 text-white rounded-lg bg-orange-600 text-center">
             Checkout
