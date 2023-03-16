@@ -149,7 +149,7 @@ function App() {
   };
 
   return (
-    <section className="relative page max-w-full h-screen md:max-w-5xl md:mx-auto">
+    <main className="relative page max-w-full h-screen md:max-w-5xl md:mx-auto">
       {menuOpen && (
         <div
           onClick={handleMenuClose}
@@ -352,7 +352,7 @@ function App() {
       )}
       {/* End of Lighthouse */}
 
-      <main className="md:mt-12 md:relative md:py-4 md:px-8 md:flex md:justify-center items-center md:gap-x-8 lg:gap-x-16">
+      <div className="md:mt-12 md:relative md:py-4 md:px-8 md:flex md:justify-center items-center md:gap-x-8 lg:gap-x-16">
         {/* Cart Display for MD+ */}
         {openCart && (
           <div className="absolute top-20 left-2 right-2 bg-white h-2/5 w-{0.95} z-10 rounded-lg drop-shadow-xl md:-top-10 md:w-1/2 md:ml-auto md:h-1/2">
@@ -481,8 +481,8 @@ function App() {
               <p className="font-bold text-xl">$125.00</p>
               <p className="text-orange-500 font-bold px-2 bg-red-100">50%</p>
             </div>
-            <p className="justify-self-end leading-8 text-slate-400">
-              <strike>$250.00</strike>
+            <p className="justify-self-end leading-8 text-slate-400 line-through">
+              $250.00
             </p>
           </div>
           <div className="md:flex md:gap-x-4 mt-3">
@@ -544,8 +544,8 @@ function App() {
             {orderErrorMessage}
           </p>
         </div>
-      </main>
-    </section>
+      </div>
+    </main>
   );
 }
 
