@@ -344,6 +344,7 @@ function App() {
 
       <main className="md:mt-12 md:relative md:py-4 md:px-8 md:flex md:justify-center items-center md:gap-x-8 lg:gap-x-16">
         {/* Cart Display for MD+ */}
+        <h1>MY E-COMMERCE PAGE</h1>
         {openCart && (
           <div className="absolute top-20 left-2 right-2 bg-white h-2/5 w-{0.95} z-10 rounded-lg drop-shadow-xl md:-top-10 md:w-1/2 md:ml-auto md:h-1/2">
             <h1 className="p-4 border-b font-bold text-md tracking-wide md:p-4 md:border-b md:font-bold md:text-md md:tracking-wide">
