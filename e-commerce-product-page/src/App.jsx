@@ -169,7 +169,7 @@ function App() {
               <path
                 d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
                 fill="#69707D"
-                fillrrule="evenodd"
+                fillRule="evenodd"
               />
             </svg>
 
@@ -250,7 +250,7 @@ function App() {
               <path
                 d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
                 fill="#ffffff"
-                fillrrule="evenodd"
+                fillRule="evenodd"
               />
             </svg>
 
@@ -272,7 +272,7 @@ function App() {
                     stroke="#1D2026"
                     strokeWidth="2.5"
                     fill="none"
-                    fillrrule="evenodd"
+                    fillRule="evenodd"
                   />
                 </svg>
               </div>
@@ -287,7 +287,7 @@ function App() {
                     stroke="#1D2026"
                     strokeWidth="2.5"
                     fill="none"
-                    fillrrule="evenodd"
+                    fillRule="evenodd"
                   />
                 </svg>
               </div>
@@ -389,7 +389,7 @@ function App() {
                 stroke="#1D2026"
                 strokeWidth="2.5"
                 fill="none"
-                fillrrule="evenodd"
+                fillRule="evenodd"
               />
             </svg>
           </div>
@@ -404,7 +404,7 @@ function App() {
                 stroke="#1D2026"
                 strokeWidth="2.5"
                 fill="none"
-                fillrrule="evenodd"
+                fillRule="evenodd"
               />
             </svg>
           </div>
@@ -487,12 +487,12 @@ function App() {
           </div>
           <div className="md:flex md:gap-x-4 mt-3">
             <div className="flex items-center justify-between mt-4 px-4 py-4 bg-slate-100 w-full rounded-md md:basis-2/5 md:py-3">
-              <button onClick={orderDecrement} className="minus">
+              <div onClick={orderDecrement} className="minus">
                 <svg
                   width="16"
                   height="4"
                   xmlns="http://www.w3.org/2000/svg"
-                  xmlnsxxlink="http://www.w3.org/1999/xlink"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
                 >
                   <defs>
                     <path
@@ -500,16 +500,16 @@ function App() {
                       id="a"
                     />
                   </defs>
-                  <use fill="#FF7E1B" fillrrule="nonzero" xlinkHref="#a" />
+                  <use fill="#FF7E1B" fillRule="nonzero" xlinkHref="#a" />
                 </svg>
-              </button>
+              </div>
               <p className="number-items font-bold">{orderTotal}</p>
-              <button onClick={orderIncrement} className="plus">
+              <div onClick={orderIncrement} className="plus">
                 <svg
                   width="16"
                   height="12"
                   xmlns="http://www.w3.org/2000/svg"
-                  xmlnsxxlink="http://www.w3.org/1999/xlink"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
                 >
                   <defs>
                     <path
@@ -517,11 +517,11 @@ function App() {
                       id="b"
                     />
                   </defs>
-                  <use fill="#FF7E1B" fillrrule="nonzero" xlinkHref="#b" />
+                  <use fill="#FF7E1B" fillRule="nonzero" xlinkHref="#b" />
                 </svg>
-              </button>
+              </div>
             </div>
-            <button
+            <div
               onClick={addToCart}
               className="mt-4 w-full flex justify-center items-center bg-orange-500 text-white rounded-md py-4 md:basis-3/5 md:py-3"
             >
@@ -530,12 +530,12 @@ function App() {
                   <path
                     d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
                     fill="#ffffff"
-                    fillrrule="nonzero"
+                    fillRule="nonzero"
                   />
                 </svg>
               </div>
               <p>Add to cart</p>
-            </button>
+            </div>
             <p className="text-center mt-2 text-amber-600 md:hidden">
               {orderErrorMessage}
             </p>
