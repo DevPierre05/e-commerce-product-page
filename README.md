@@ -1,5 +1,7 @@
 # Frontend Mentor - E-commerce product page
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3194ade0-fdce-45f6-9593-68cf87586db0/deploy-status)](https://app.netlify.com/sites/e-commerce-sneaker-mens-wear/deploys)
+
 ![Design preview for the E-commerce product page coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
