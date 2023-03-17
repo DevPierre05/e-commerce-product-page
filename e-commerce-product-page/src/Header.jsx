@@ -96,7 +96,7 @@ export default function Header(props) {
         <img
           src={profileImage}
           alt="profile-picture"
-          className="w-5 h-5 md:w-10 md:h-10 cursor-pointer md:hover:border-2 border-orange-600 md:hover:rounded-full"
+          className="w-7 h-7 md:w-10 md:h-10 cursor-pointer md:hover:border-2 border-orange-600 md:hover:rounded-full"
         />
       </div>
     </nav>
