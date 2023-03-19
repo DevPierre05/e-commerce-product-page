@@ -111,7 +111,7 @@ function App() {
     return cartArray?.map((item, i) => {
       return (
         <div key={i} className="p-2 md:p-8 h-auto flex flex-col gap-4">
-          <div className="flex gap-12 md:gap-4">
+          <div className="flex gap-8 md:gap-4">
             <img
               src="../image-product-1-thumbnail.jpg"
               alt=""
@@ -140,7 +140,7 @@ function App() {
               <path d="M17 6h5v2h-2v13a1 1 0 01-1 1H5a1 1 0 01-1-1V8H2V6h5V3a1 1 0 011-1h8a1 1 0 011 1v3zm1 2H6v12h12V8zm-9 3h2v6H9v-6zm4 0h2v6h-2v-6zM9 4v2h6V4H9z" />
             </svg>
           </div>
-          <button className="p-1 md:p-2 text-white rounded-lg bg-orange-600 text-center">
+          <button className="p-2 md:p-2 text-white rounded-lg bg-orange-600 text-center">
             Checkout
           </button>
         </div>
@@ -356,7 +356,7 @@ function App() {
       <div className="md:mt-12 md:relative md:py-4 md:px-8 md:flex md:justify-center items-center md:gap-x-8 lg:gap-x-16">
         {/* Cart Display for MD+ */}
         {openCart && (
-          <div className="absolute top-20 left-2 right-2 bg-white h-3/5 w-{0.95} z-10 rounded-lg drop-shadow-xl md:-top-10 md:w-1/2 md:ml-auto md:h-1/2">
+          <div className="absolute top-20 left-2 right-2 bg-white h-1/4 w-{0.95} z-10 rounded-lg drop-shadow-xl md:-top-10 md:w-1/2 md:ml-auto md:h-1/2">
             <h1 className="p-4 border-b font-bold text-md tracking-wide md:p-4 md:border-b md:font-bold md:text-md md:tracking-wide">
               Cart
             </h1>
